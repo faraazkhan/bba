@@ -11,7 +11,6 @@ jQuery(document).ready(function() {
 
 function mycarousel_initCallback(carousel)
 {
-	Cufon.refresh();
     // Disable autoscrolling if the user clicks the prev or next button.
     carousel.buttonNext.bind('click', function() {
         carousel.next();
@@ -39,6 +38,5 @@ $(function(){
 })
 
 function pageLoaded() {
-	Cufon.replace('.info h2', { fontFamily: 'Chaparral Pro'});
 	
 }
