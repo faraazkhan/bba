@@ -18,9 +18,10 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem "devise", ">= 1.5.0"
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -29,9 +30,14 @@ gem 'jquery-rails'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug19', :require => 'ruby-debug'
+#gem 'ruby-debug19', :require => 'ruby-debug'
 
 group :test do
   # Pretty printed test output
   gem 'turn', '~> 0.8.3', :require => false
+  gem "factory_girl_rails", ">= 1.4.0", :group => :test
+  gem "cucumber-rails", ">= 1.2.0", :group => :test
+  gem "capybara", ">= 1.1.2", :group => :test
+  gem "database_cleaner", ">= 0.7.0", :group => :test
+  gem "launchy", ">= 2.0.5", :group => :test
 end
